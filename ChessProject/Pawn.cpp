@@ -1,15 +1,15 @@
-#include "Knight.h"
+#include "Pawn.h"
 
-
-Knight::Knight(const int color): Piece("Knight", color)
+Pawn::Pawn(const int color) : Piece("Pawn", color)
 {
 }
 
-Knight::~Knight()
+Pawn::~Pawn()
 {
 }
 
-void Knight::Move(const Manager& board, const std::string& move) const
+
+void Pawn::Move(const Manager& board, const std::string& move) const
 {
 	std::string boardstr = board.GetBoard();
 

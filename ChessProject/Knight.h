@@ -4,10 +4,8 @@
 
 class Knight : public Piece
 {
-
-private:
-	Piece* _Piece;
 public:
-	Knight(const std::string& name, int color);
+	Knight(const int color);
 	virtual ~Knight();
+	virtual void Move(const Manager& board, const std::string& move) const override;
 };

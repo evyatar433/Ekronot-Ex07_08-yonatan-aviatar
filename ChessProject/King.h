@@ -1,11 +1,11 @@
 #pragma once
+#include <string>
 #include "Piece.h"
 
-class Bishop : public Piece
+class King : public Piece
 {
 public:
-	Bishop(const int color);
-	virtual ~Bishop();
+	King(const int color);
+	virtual ~King();
 	virtual void Move(const Manager& board, const std::string& move) const override;
 };
-
